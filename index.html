@@ -1,12 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     
+
     <title>Hire A Dog</title>
-</head>
-<body>
-    
-</body>
+    <script>
+            function myFunction() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("mySearch");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("myMenu");
+              li = ul.getElementsByTagName("li");
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+            }
+            </script>
+ 
+  </head>
+  <body>
+   
+    <div class="header">
+      <!-- <div class="top-color"></div> -->
+      <div class="header-img"></div>
+    </div>
+
+    <!-- Search bar -->
+    <input
+      type="text"
+      id="mySearch"
+      onkeyup="myFunction()"
+      placeholder=" Search for your best match..."
+      title="Type in a category"
+    />
+
+    <h1 id="h1">Hire A Dog</h1>
+
+    <div class="container">
+            <ul id="myMenu">
+
+      <li class="items" ><img
+        class="responsive"
+        src="./image/alexandru-sofronie-606025-unsplash.jpg"
+        alt=""/><a href="#"><!-- run --></a>
+      </li>
+
+
+
+      <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                    <li class="items" > <img src=./image/alexandru-sofronie-606025-unsplash.jpg alt="Avatar" style="width:300px;height:300px;">  alt=""/><a href="#"><!-- run --></a></li>
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1> 
+                <p>Architect & Engineer</p> 
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+
+      
+      <li class="items"><img
+        class="responsive"
+        src="./image/alexandru-sofronie-606025-unsplash.jpg"
+        alt=""/><a href="#"><!-- walk --></a>
+      </li>
+
+      
+      <li class="items"><img
+        class="responsive"
+        src="./image/alexandru-sofronie-606025-unsplash.jpg"
+        alt=""/><a href="#"><!-- jump --></a>
+      </li>
+
+
+      <li class="items"><img
+        class="responsive"
+        src="./image/alexandru-sofronie-606025-unsplash.jpg"
+        alt=""/><a href="#"><!-- dance --></a>
+      </li>
+
+
+      <li class="items"><img
+        class="responsive"
+        src="./image/alexandru-sofronie-606025-unsplash.jpg"
+        alt=""/><a href="#"><!-- love --></a>
+      </li>
+
+      
+      <li class="items"><img
+        class="responsive"
+        src="./image/alexandru-sofronie-606025-unsplash.jpg"
+        alt=""/><a href="#"><!-- eat --></a>
+      </li>
+
+
+      <li class="items"><img
+        class="responsive"
+        src="./image/alexandru-sofronie-606025-unsplash.jpg"
+        alt=""/><a href="#"><!-- pee --></a>
+      </li>
+
+
+      <li class="items"><img
+        class="responsive"
+        src="./image/alexandru-sofronie-606025-unsplash.jpg"
+        alt=""/><a href="#"><!--  --></a>
+      </li>
+
+      
+     
+</ul>
+
+    </div>
+
+    <h2 id="h2">How dose it work</h2>
+
+    <div class="work">
+      <div class="items2" id="img1">
+        <img class="responsive" src="./gif/1.gif" alt="" />
+    </div>
+            <p class="p-work" id="p1">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+              voluptate! Neque unde voluptatem eum nobis nihil tempora. Odio modi
+              alias, repellat ipsa doloribus aliquid odit earum officiis illo autem
+              laudantium!
+            </p>
+      <div class="items2" id="img2">
+        <img class="responsive" src="./gif/2.gif" alt="" />
+    </div>
+            <p class="p-work" id="p2">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+              voluptate! Neque unde voluptatem eum nobis nihil tempora. Odio modi
+              alias, repellat ipsa doloribus aliquid odit earum officiis illo autem
+              laudantium!
+            </p>
+      <div class="items2" id="img3">
+        <img class="responsive" src="./gif/3.gif" alt="" />
+    </div>
+            <p class="p-work" id="p3">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+              voluptate! Neque unde voluptatem eum nobis nihil tempora. Odio modi
+              alias, repellat ipsa doloribus aliquid odit earum officiis illo autem
+              laudantium!
+            </p>
+    </div>
+
+    <footer>
+            <p>&copy; 2019 All Rights Reserved | HIRE A DOG</p>
+    </footer>
+
+    <!-- <div class="scrollTop hidden">
+            <a href="#">
+              <i class="fas fa-angle-up"></i>
+            </a>
+          </div> -->
+  </body>
 </html>

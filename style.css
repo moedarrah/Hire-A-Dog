@@ -1,0 +1,263 @@
+/* Colors */
+.color {
+  color: #1f2430;
+  color: #f4eeec;
+  color: #dedbd0;
+  color: #ffece4;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Mobile first  */
+
+body {
+  padding: 0;
+  background: #ffece4;
+  font-family: "Righteous", cursive;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.top-color {
+  background-color: #1f2430;
+  position: absolute;
+  width: 100%;
+  height: 20px;
+}
+
+.header-img {
+  background-image: url(./image/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vmin;
+  width: 100%;
+  position: relative;
+  top: 20px;
+  z-index: -10;
+}
+
+#mySearch {
+  width: 80%;
+  height: 3rem;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 180px;
+  left: 10%;
+}
+
+h2,
+h1 {
+  color: #1f2430;
+  text-align: center;
+}
+
+#h1{
+    position: absolute;
+    top: 230px;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.container{
+    position: relative;
+    top: 150px;
+}
+
+
+.items {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+}
+
+li{
+    list-style: none;
+}
+
+#h2{
+    position: relative;
+    top: 250px;
+}
+
+.work{
+    position: relative;
+    top: 300px;
+    
+}
+
+
+.items2 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50% ;
+  overflow: hidden;
+  
+}
+
+/* .work  .items2{
+    border-radius: 50px;
+} */
+
+.p-work {
+  color: #1f2430;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+}
+
+footer {
+  background-color: #1f2430;
+  width: 100%;
+  position: relative;
+  top: 300px;
+  height: 15vh;
+  color: #dedbd0;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #1f2430;
+    opacity: 0.85;
+    color: white;
+    transition: all 200ms ease-in-out;
+
+}
+
+
+@media (min-width: 768px) {
+
+    .top-color {
+        
+        height: 50px;
+      }
+
+      .header-img {
+        height: 40vmin;
+        top: 0px;
+        
+        
+      }
+
+      #mySearch {
+        width: 60%;
+        height: 4rem;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        top: 220px;
+        left: 20%;
+        font-size: 1.5em;
+      }
+
+      #h1{
+        position: absolute;
+        top: 50px;
+        text-align: left;
+        padding-left: 30px;
+        left: 0;
+        right: 0;
+        font-size: 3em;
+        color: #dedbd0;
+    }
+
+
+    .container ul{
+        top: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr  ;
+        grid-row-gap: 0;
+        margin-left: 200px;
+        margin-right: 200px;
+        z-index: -1;
+        
+      }
+
+      .items{
+          width: 100%;
+          height: auto;
+      }
+
+
+      #h2{
+        position: relative;
+        top: 100px;
+        font-size: 4em;
+    }
+
+    .work{
+        position: relative;
+        top: 100px;
+        
+        
+        
+     }
+
+     .items2{
+         float: left;
+         width: 33.3%;
+     }
+
+     .p-work{
+        float: left;
+        width: 33.3%;
+     }
+     
+
+
+    
+
+    
+    
+    
+    
+    
+    
+
+
+
+
+      
+
+
+
+
+
+
+
+
+}
