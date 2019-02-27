@@ -47,7 +47,6 @@ body {
   height: 50vmin;
   width: 100%;
   position: relative;
-  top: 20px;
   z-index: -10;
 }
 
@@ -99,6 +98,12 @@ li{
     list-style: none;
 }
 
+
+     .flip-card-back{
+        display: none;
+     }
+    
+
 #h2{
     position: relative;
     top: 250px;
@@ -136,8 +141,8 @@ footer {
   background-color: #1f2430;
   width: 100%;
   position: relative;
-  top: 300px;
-  height: 15vh;
+  top: 50%;
+  height: 30vh;
   color: #dedbd0;
   text-align: center;
   font-size: 0.8em;
@@ -156,6 +161,134 @@ footer {
     transition: all 200ms ease-in-out;
 
 }
+
+button{
+    background-color: #ffece4;
+    font-family: "Righteous", cursive;
+    cursor: pointer;
+}
+
+.takeMe{
+  background-color: #dedbd0;
+  color: #1f2430;
+  font-family: "Righteous", cursive;
+  cursor: pointer;
+  text-decoration:none ;
+}
+
+#back-h1{
+  color: #ffece4;
+}
+
+/* form mobil*/
+
+#rubrik1,
+#rubrik2 {
+  position: relative;
+  text-align: center;
+  color: #1f2430;
+}
+
+#rubrik1 {
+  top: 5px;
+}
+#form1,
+#form2 {
+  position: relative;
+  width: 96%;
+  margin: 0 2%;
+}
+  #item1,
+  #item2,
+  #item3,
+  #item4,
+  #item5,
+  #item6,
+  #item7,
+  #item8,
+  #item9,
+  #item10,
+  #item11,
+  #item12,
+  #item13,
+  #item14,
+  #item15,
+  #item16 {
+    padding: 5px;
+  }
+  label {
+    color: #1f2430;
+  }
+  input {
+    width: 100%;
+    padding: 7px;
+  }
+
+#form1 {
+  top: 20px;
+}
+#rubrik2 {
+  top: 150px;
+}
+#form2 {
+  top: 150px;
+}
+  #item16 {
+    display: flex;
+  }
+  #item15 #invoice {
+    width: auto;
+    cursor: pointer;
+  }
+  #item16 #order {
+    margin-left: auto;
+    width: 70px;
+    background-color: #1f2430 ;
+    color: white;
+    border-radius: 10px;
+    font-family: "Bangers", cursive, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+
+#text0 {
+  position: relative;
+  top: 300px;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  overflow: hidden;
+  color: #1f2430;
+  line-height: 2em;
+}
+
+/* footer, #footer {
+  background: url(../image/5-comic-burst-background-1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 15vh;
+  color: lighten(#1f2430, 5%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  top: 100%;
+  
+  flex: 0;
+  margin-top: 15rem;
+  margin-bottom: -2rem;
+
+}
+
+#footer {
+  margin-top: 35rem;
+  margin-bottom: 0;
+} */
+
 
 
 @media (min-width: 768px) {
@@ -194,23 +327,76 @@ footer {
         font-size: 3em;
         color: #dedbd0;
     }
+        #myMenu{
+            margin-left: 150px;
+            
+        }
 
-
-    .container ul{
-        top: 60px;
+    .container > ul{
+      
+        
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr  ;
-        grid-row-gap: 0;
-        margin-left: 200px;
+        /* grid-row-gap: 0; */
+        margin-left: auto;
         margin-right: 200px;
+        padding-bottom: 80px;
         z-index: -1;
         
       }
 
-      .items{
+      .items > li{
           width: 100%;
           height: auto;
+          
+          
       }
+
+      /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 150px;
+    height: 220px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #1f2430;
+    color: white;
+    transform: rotateY(180deg);
+    display: grid;
+  }
 
 
       #h2{
@@ -236,6 +422,110 @@ footer {
         float: left;
         width: 33.3%;
      }
+
+     /* footer {
+      background-color: #1f2430;
+      width: 100%;
+      position: relative;
+      top: 300px;
+      height: 15vh;
+      color: #dedbd0;
+      text-align: center;
+      font-size: 0.8em;
+    } */
+
+    /*** form start ****/
+
+    #form1,
+    #form2 {
+      width: 40%;
+      margin: auto;
+      height: auto;
+      padding: 10px;
+      display: grid;
+      gap: 10px;
+    }
+
+    #rubrik1 {
+      top: 20px;
+    }
+    #rubrik2 {
+      top: 40px;
+    }
+    #form1 {
+      top: 20px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "cell1 cell2" "cell3 ." "cell4 cell4" "cell5 cell5" "cell6 cell7" "cell8 ." "cell9 ."
+        "cell10 cell11";
+    }
+      #item1 {
+        grid-area: cell1;
+      }
+      #item2 {
+        grid-area: cell2;
+      }
+      #item3 {
+        grid-area: cell3;
+      }
+      #item4 {
+        grid-area: cell4;
+      }
+      #item5 {
+        grid-area: cell5;
+      }
+      #item6 {
+        grid-area: cell6;
+      }
+      #item7 {
+        grid-area: cell7;
+      }
+      #item8 {
+        grid-area: cell8;
+      }
+      #item9 {
+        grid-area: cell9;
+      }
+      #item10 {
+        grid-area: cell10;
+      }
+      #item11 {
+        grid-area: cell11;
+      }
+    }
+    #form2 {
+      top: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "cell12" "cell13" "cell14" "cell15" "cell16";
+    }
+      #item12 {
+        grid-area: cell12;
+      }
+      #item13 {
+        grid-area: cell13;
+      }
+      #item14 {
+        grid-area: cell14;
+      }
+      #item15 {
+        grid-area: cell15;
+      }
+      #item16 {
+        grid-area: cell16;
+      }
+    
+    #text0 {
+      width: 43%;
+      top:20px ;
+    }
+
+
+    /* Form ends here */
+  
+
+     
      
 
 
