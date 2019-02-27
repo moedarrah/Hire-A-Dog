@@ -1,12 +1,23 @@
-/* Colors */
+/* color harmony */
 .color {
   color: #1f2430;
   color: #f4eeec;
   color: #dedbd0;
   color: #ffece4;
 }
-
+/* Font from google font */
 @import url("https://fonts.googleapis.com/css?family=Righteous");
+
+
+
+
+
+
+/* OBS!---------------MOBILE FIRST---------------- */
+
+
+
+
 
 html,
 body {
@@ -125,9 +136,6 @@ li{
   
 }
 
-/* .work  .items2{
-    border-radius: 50px;
-} */
 
 .p-work {
   color: #1f2430;
@@ -263,35 +271,13 @@ button{
   line-height: 2em;
 }
 
-/* footer, #footer {
-  background: url(../image/5-comic-burst-background-1.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 15vh;
-  color: lighten(#1f2430, 5%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  position: relative;
-  top: 100%;
-  
-  flex: 0;
-  margin-top: 15rem;
-  margin-bottom: -2rem;
-
-}
-
-#footer {
-  margin-top: 35rem;
-  margin-bottom: 0;
-} */
-
-
+/* End of form mobil */
 
 @media (min-width: 768px) {
+
+
+
+  /* -------------DESKTOP VERSION--------------- */
 
     .top-color {
         
@@ -301,7 +287,6 @@ button{
       .header-img {
         height: 40vmin;
         top: 0px;
-        
         
       }
 
@@ -326,31 +311,38 @@ button{
         right: 0;
         font-size: 3em;
         color: #dedbd0;
-    }
+      }
+
+
         #myMenu{
             margin-left: 150px;
             
         }
 
-    .container > ul{
+        .container > ul{
       
         
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr  ;
-        /* grid-row-gap: 0; */
-        margin-left: auto;
-        margin-right: 200px;
-        padding-bottom: 80px;
-        z-index: -1;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr  ;
+            /* grid-row-gap: 0; */
+            margin-left: auto;
+            margin-right: 200px;
+            padding-bottom: 80px;
+            z-index: -1;
         
-      }
+        }
 
-      .items > li{
+        .items > li{
           width: 100%;
           height: auto;
           
           
       }
+
+
+                            /* ----------Flip card start here--------- */
+
+
 
       /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
