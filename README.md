@@ -1,9 +1,9 @@
 # Hire-A-Dog
 
-# Ett projekt jag gjorde i min studie vid Nackademin
+## Ett projekt jag gjorde i min studie vid Nackademin
 
 
-# Skapad datum: 25/2/19
+Skapad datum: 25/2/19
 Senast ändrad 25/2/19
 Dokumentansvarig: Sara Svensson: 
 
