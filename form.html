@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hire A Dog</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="./image/favicon.ico" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Hire A Dog</title>
+    
     <script>
       $(function() {
         $("#date").combodate({
@@ -34,10 +40,10 @@
       <!-- <div class="top-color"></div> -->
       <div class="header-img"></div>
 
-      <h1 id="h1">Hire A Dog</h1>
+      <!-- <h1 id="h1">Hire A Dog</h1> -->
 
       <ul class="menu-list">
-        <li class="home-section"><a href="./index.html">Back to Home page</a></li>
+        <li class="back"><a href="./index.html"><i class="far fa-hand-point-left"></i>Back to Home page</a></li>
       </ul>
     </header>
 
@@ -110,6 +116,7 @@
       </div>
 
       <h2 id="rubrik2">Card Information</h2>
+
       <div id="form2">
         <div id="item12">
           <label for="name">Name</label><br />
@@ -140,11 +147,12 @@
       </p>
     </main>
 
-    <div class="scrollTop hidden">
-      <a href="#">
-        <i class="fas fa-angle-up"></i>
-      </a>
+  
     </div>
+
+    <button id="backToTop">
+        <i class="fas fa-chevron-circle-up"></i>
+      </button>
     <footer>
       <p>&copy; 2019 All Rights Reserved | HIRE A DOG</p>
     </footer>

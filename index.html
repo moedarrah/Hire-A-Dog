@@ -4,44 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="./image/favicon.ico" />
+    <script type="text/javascript" src="script.js"></script>
 
     <title>Hire A Dog</title>
-    <script>
-      function myFunction() {
-        var input, filter, ul, li, a, i;
-        input = document.getElementById("mySearch");
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myMenu");
-        li = ul.getElementsByTagName("li");
-        for (i = 0; i < li.length; i++) {
-          a = li[i].getElementsByTagName("a")[0];
-          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-          } else {
-            li[i].style.display = "none";
-          }
-        }
-      }
-    </script>
+
   </head>
   <body>
-    <div class="header">
-      <!-- <div class="top-color"></div> -->
-      <div class="header-img"></div>
-    </div>
 
+    <div class="header">
+        <div class="header-img"></div>
+    </div>
+    
     <!-- Search bar -->
     <input
+      style="font-family:Arial, FontAwesome"
       type="text"
       id="mySearch"
       onkeyup="myFunction()"
-      placeholder=" Search for your best match..."
+      placeholder="    &#xF002; Search for your best match..."
       title="Type in a category"
     />
 
@@ -136,7 +120,85 @@
           </div>
         </li>
 
-                          <!-- The new dogs -->
+                          <!-- Start of row 2 -->
+
+        <li class="items">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src=./image/1.jpg
+                alt="Avatar" style="width:150px;height:auto;"><a href="#"
+                  ><!-- Running  Jumping Zumba --></a>
+              </div>
+              <div class="flip-card-back">
+                <h1 id="back-h1">BELLA</h1>
+                <p>Sweet & Funny</p>
+                <p>Running, Jumping, Zumba</p>
+                <a class="takeMe" href="form.html">Pick me.</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+        <li class="items">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src=./image/2.jpg alt="Avatar"
+                style="width:150px;height:auto;"><a href="#"
+                  ><!-- Eating sleeping TV --></a>
+              </div>
+              <div class="flip-card-back">
+                <h1 id="back-h1">LUCY</h1>
+                <p>Sleepy & Lazy</p>
+                <p>Eating, sleeping, TV</p>
+                <a class="takeMe" href="form.html">Pick me.</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+
+        <li class="items">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src=./image/3.jpg alt="Avatar"
+                style="width:150px;height:auto;"><a href="#"
+                  ><!-- Running Jumping YOGA --></a>
+              </div>
+              <div class="flip-card-back">
+                <h1 id="back-h1">APOLLO</h1>
+                <p>ACTIVE</p>
+                <p>Running, Jumping, YOGA</p>
+                <a class="takeMe" href="form.html">Pick me.</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+
+        <li class="items">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src=./image/4.jpg
+                alt="Avatar" style="width:150px;height:auto;"><a href="#"
+                  ><!-- Jumping Finding stuff --></a>
+              </div>
+              <div class="flip-card-back">
+                <h1 id="back-h1">DAISY</h1>
+                <p>CURIOUS</p>
+                <p>Jumping, Finding stuff</p>
+                <a class="takeMe" href="form.html">Pick me.</a>
+              </div>
+            </div>
+          </div>
+        </li>
+                          <!-- Start of row 3 -->
 
         <li class="items">
           <div class="flip-card">
@@ -220,46 +282,45 @@
       </ul>
     </div>
 
+   
+
     <h2 id="h2">How dose it work</h2>
 
-    <div class="work">
-      <div class="items2" id="img1">
-        <img class="responsive" src="./gif/1.gif" alt="" />
+    <section id="how-work-sec">
+
+      <div class="stage">
+        <img class="stage-img" src="./gif/1.gif" />
+        <span class="stage-tex">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+          voluptate! Neque unde voluptatem eum nobis nihil tempora. Odio modi
+          alias, repellat ipsa doloribus aliquid odit earum officiis illo autem
+          laudantium!</span>
       </div>
-      <p class="p-work" id="p1">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-        voluptate! Neque unde voluptatem eum nobis nihil tempora. Odio modi
-        alias, repellat ipsa doloribus aliquid odit earum officiis illo autem
-        laudantium!
-      </p>
-      <div class="items2" id="img2">
-        <img class="responsive" src="./gif/2.gif" alt="" />
+      <div class="stage">
+        <img class="stage-img" src="./gif/2.gif" />
+        <span class="stage-tex">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+          voluptate! Neque unde voluptatem eum nobis nihil tempora. Odio modi
+          alias, repellat ipsa doloribus aliquid odit earum officiis illo autem
+          laudantium!</span>
       </div>
-      <p class="p-work" id="p2">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-        voluptate! Neque unde voluptatem eum nobis nihil tempora. Odio modi
-        alias, repellat ipsa doloribus aliquid odit earum officiis illo autem
-        laudantium!
-      </p>
-      <div class="items2" id="img3">
-        <img class="responsive" src="./gif/3.gif" alt="" />
+      <div class="stage">
+        <img class="stage-img" src="./gif/3.gif" />
+        <span class="stage-tex">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+          voluptate! Neque unde voluptatem eum nobis nihil tempora. Odio modi
+          alias, repellat ipsa doloribus aliquid odit earum officiis illo autem
+          laudantium!</span>
       </div>
-      <p class="p-work" id="p3">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-        voluptate! Neque unde voluptatem eum nobis nihil tempora. Odio modi
-        alias, repellat ipsa doloribus aliquid odit earum officiis illo autem
-        laudantium!
-      </p>
-    </div>
+    </section> 
+
+    
 
     <footer>
       <p>&copy; 2019 All Rights Reserved | HIRE A DOG</p>
     </footer>
 
-    <!-- <div class="scrollTop hidden">
-            <a href="#">
-              <i class="fas fa-angle-up"></i>
-            </a>
-          </div> -->
+    <button id="backToTop">
+      <i class="fas fa-chevron-circle-up"></i>
+    </button>
   </body>
 </html>
+
+
