@@ -94,7 +94,7 @@ h1 {
 
 .container {
   position: relative;
-  top: 110px;
+  top: 100px;
 }
 
 .items {
@@ -423,6 +423,7 @@ input {
     padding-bottom: 80px;
     width: 0;
     z-index: -1;
+    
   }
 
   /* ----------Flip card start here--------- */
@@ -662,7 +663,7 @@ input {
 
 .back{
   position: fixed;
-  top: 550px;
+  top: 500px;
   left: 50px;
   
   
