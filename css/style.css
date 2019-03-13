@@ -108,6 +108,11 @@ li {
   list-style: none;
 }
 
+
+
+
+
+
 /* The flip card container  */
 .flip-card {
   background-color: transparent;
@@ -155,6 +160,13 @@ li {
   display: grid;
 }
 
+/* End of the flip card container  */
+
+
+
+
+
+
 #h2 {
   position: relative;
   top: 250px;
@@ -198,8 +210,6 @@ li {
 
 
 
-
-
 #about-us {
   margin: 0;
   top: 25rem;
@@ -227,8 +237,6 @@ footer {
   width: 100%;
   position: relative;
   top: 40%;
-  /* height: 30vh; */
-  /*  margin-bottom: -2rem; */
   color: #dedbd0;
   text-align: center;
   font-size: 0.8em;
@@ -253,7 +261,13 @@ button {
   color: #ffece4;
 }
 
-/* form mobil*/
+
+
+
+/* form mobil start here*/
+
+
+
 
 #h1-form{
   
@@ -363,7 +377,12 @@ input {
 
 /* End of form mobil */
 
+
+
 @media (min-width: 768px) {
+
+
+
   /* -------------DESKTOP VERSION--------------- */
 
   #backToTop {
@@ -476,6 +495,9 @@ input {
   }
 
   /* ----------Flip card end here--------- */
+
+
+
   #h2 {
     position: relative;
     top: 100px;
@@ -485,7 +507,6 @@ input {
 
   #h3 {
     position: relative;
-    /* top: 250px; */
     padding-bottom: 80px;
     font-size: 3em;
   }
@@ -494,7 +515,6 @@ input {
     top: 18rem;
     display: flex;
     justify-content: center;
-    /* padding-bottom: 300px; */
     padding-left: 150px;
   }
 
@@ -550,15 +570,19 @@ input {
     background-color: #1f2430;
     width: 100%;
     position: relative;
-     top: 40%; 
-    /* height: 30vh; */
-    /*  margin-bottom: -2rem; */
+    top: 40%; 
     color: #dedbd0;
     text-align: center;
     font-size: 0.8em;
   }
 
-  /*** form start ****/
+
+
+
+  /**** form start ****/
+
+
+
 
 
   #h1-form {
