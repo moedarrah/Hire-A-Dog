@@ -51,7 +51,7 @@ body {
 
 
 .header-img {
-  background-image: url(./image/header.jpg);
+  background-image: url(../image/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -94,7 +94,7 @@ h1 {
 
 .container {
   position: relative;
-  top: 120px;
+  top: 110px;
 }
 
 .items {
@@ -162,6 +162,11 @@ li {
   font-size: 3em;
 }
 
+#h3 {
+  position: relative;
+  top: 20px;
+  font-size: 3em;
+}
 #how-work-sec {
   margin: 0;
   top: 25rem;
@@ -188,7 +193,32 @@ li {
   color: #1f2430;
   display: flex;
   justify-content: center;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
+}
+
+
+
+
+
+#about-us {
+  margin: 0;
+  top: 25rem;
+}
+
+.about-us-block {
+  display: flex;
+  width: 90%;
+  top: 0px;
+  margin: 0 auto;
+}
+
+
+.about-us-tex {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  color: #1f2430;
+  padding-bottom: 20px;
 }
 
 
@@ -196,7 +226,7 @@ footer {
   background-color: #1f2430;
   width: 100%;
   position: relative;
-  /* top: 40%; */
+  top: 40%;
   /* height: 30vh; */
   /*  margin-bottom: -2rem; */
   color: #dedbd0;
@@ -225,16 +255,32 @@ button {
 
 /* form mobil*/
 
+#h1-form{
+  
+    position: absolute;
+    top: 10px;
+    text-align: left;
+    padding-left: 30px;
+    left: 0;
+    right: 0;
+    font-size: 2em;
+    color: #dedbd0;
+  
+}
 
 .back{
+position: relative;
+top: 20px;
+padding-bottom: 20px;
+text-align:center ;
+}
+
+
+ .back a{
+
 text-decoration: none;
 color: #1f2430;
 font-size: 1.2em;
-padding-left: 50px;
-
-}
-.back:visited{
-  text-decoration: none;
 }
 
 
@@ -333,9 +379,7 @@ input {
     height: 40px;
   }
 
-  .top-color {
-    height: 50px;
-  }
+  
 
   .header-img {
     height: 40vmin;
@@ -365,13 +409,17 @@ input {
     color: #dedbd0;
   }
 
+
+
   #myMenu {
+    width:40% ;
     margin-left: 300px;
+    
   }
 
   .container > ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     padding-bottom: 80px;
     width: 0;
     z-index: -1;
@@ -433,6 +481,13 @@ input {
     font-size: 4em;
     padding-bottom: 100px;
   }
+
+  #h3 {
+    position: relative;
+    top: 250px;
+    padding-bottom: 300px;
+    font-size: 3em;
+  }
   #how-work-sec {
     margin: 0 10%;
     top: 18rem;
@@ -463,6 +518,30 @@ input {
     color: #1f2430;
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
+  }
+
+
+  #about-us {
+    margin: 0;
+    top: 25rem;
+  }
+  
+  .about-us-block {
+    display: flex;
+    width: 90%;
+    top: 0px;
+    margin: 0 auto;
+  }
+  
+  
+  .about-us-tex {
+    
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 20px;
+    color: #1f2430;
+    padding-bottom: 20px;
   }
 
   
@@ -479,6 +558,18 @@ input {
   }
 
   /*** form start ****/
+
+
+  #h1-form {
+    position: absolute;
+    top: 50px;
+    text-align: left;
+    padding-left: 30px;
+    left: 0;
+    right: 0;
+    font-size: 3em;
+    color: #dedbd0;
+  }
 
   #form1,
   #form2 {
@@ -569,7 +660,24 @@ input {
   
 }
 
+.back{
+  position: fixed;
+  top: 550px;
+  left: 50px;
+  
+  
+  }
 
+.back a{
+  
+  text-decoration: none;
+  color: #1f2430;
+  font-size: 1.2em;
+  line-height:1.2em;
+  left: 50px;
+  text-align:center ;
+  
+  }
 
 /* Form desktop ends here */
 }
