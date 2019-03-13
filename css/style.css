@@ -486,7 +486,7 @@ input {
   #h3 {
     position: relative;
     /* top: 250px; */
-    /* padding-bottom: 300px; */
+    padding-bottom: 80px;
     font-size: 3em;
   }
   #how-work-sec {
