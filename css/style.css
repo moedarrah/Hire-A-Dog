@@ -236,7 +236,7 @@ footer {
 
 
 button {
-  
+  background-color: #ffece4;
   font-family: "Righteous", cursive;
   cursor: pointer;
 }
@@ -485,8 +485,8 @@ input {
 
   #h3 {
     position: relative;
-    top: 250px;
-    padding-bottom: 300px;
+    /* top: 250px; */
+    /* padding-bottom: 300px; */
     font-size: 3em;
   }
   #how-work-sec {
@@ -494,7 +494,7 @@ input {
     top: 18rem;
     display: flex;
     justify-content: center;
-    padding-bottom: 300px;
+    /* padding-bottom: 300px; */
     padding-left: 150px;
   }
 
